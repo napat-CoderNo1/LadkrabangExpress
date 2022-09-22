@@ -1,0 +1,117 @@
+{  
+            {"station_name": "กรุงเทพ","departure_hour": 6, "departure_minute": 55 },
+            {"station_name": "พญาไท","departure_hour": 7, "departure_minute": 8 },
+            {"station_name": "ราชปรารภ","departure_hour": 7, "departure_minute": 12 },
+            {"station_name": "มักกะสัน","departure_hour": 7, "departure_minute": 16 },
+            {"station_name": "อโศก","departure_hour": 7, "departure_minute": 22 },
+            {"station_name": "คลองตัน","departure_hour": 7, "departure_minute": 40 },
+            {"station_name": "หัวหมาก","departure_hour": 7, "departure_minute": 49 },
+            {"station_name": "บ้านทับช้าง","departure_hour": 7, "departure_minute": 57 },
+            {"station_name": "ลาดกระบัง","departure_hour": 8, "departure_minute": 6 },
+            {"station_name": "พระจอมเกล้า ","departure_hour": 8, "departure_minute": 10 },
+            {"station_name": "หัวตะเข้","departure_hour": 8, "departure_minute": 14  },
+            {"station_name": "คลองหลวงแพ่ง","departure_hour": 8, "departure_minute": 24 },
+            {"station_name": "คลองอุดมชลจร","departure_hour": 8, "departure_minute": 29 },
+            {"station_name": "เปรง","departure_hour": 8, "departure_minute": 34  },
+            {"station_name": "คลองแขวงกลั่น","departure_hour": 8, "departure_minute": 40 },
+            {"station_name": "คลองบางพระ","departure_hour": 8, "departure_minute": 46 },
+            {"station_name": "บางเตย","departure_hour": 8, "departure_minute": 51 },
+            {"station_name": "ชุมทางฉะเชิงเทรา","departure_hour": 8, "departure_minute": 59 },
+            {"station_name": "ดอนสีนนท์","departure_hour": 9, "departure_minute": 16  },
+            {"station_name": "พานทอง","departure_hour": 9, "departure_minute": 31 },
+            {"station_name": "ชลบุรี","departure_hour": 9, "departure_minute": 49 },
+            {"station_name": "บางพระ","departure_hour": 10, "departure_minute": 0 },
+            {"station_name": "เขาพระบาท","departure_hour": 10, "departure_minute": 7 },
+            {"station_name": "ชุมทางศรีราชา","departure_hour": 10, "departure_minute": 13 },
+            {"station_name": "บางละมุง","departure_hour": 10, "departure_minute": 25 },
+            {"station_name": "พัทยา","departure_hour": 10, "departure_minute": 35 },
+            {"station_name": "พัทยาใต้","departure_hour": 10, "departure_minute": 40 },
+            {"station_name": "บ้านห้วยขวาง","departure_hour": 10, "departure_minute": 51 },
+            {"station_name": "ญาณสังวราราม","departure_hour": 10, "departure_minute": 57 },
+            {"station_name": "สวนนงนุช","departure_hour": 11, "departure_minute": 4 },
+            {"station_name": "ชุมทางเขาชีจรรย์","departure_hour": 11, "departure_minute": 13 },
+            {"station_name": "บ้านพลูตาหลวง","departure_hour": 11, "departure_minute": 20 }
+},
+
+"register data"{
+    "bdate": "2001-09-04",
+    "email": "Rakchat@gmail.com",
+    "fname": "Somchai",
+    "fnameTH": "สมชาย",
+    "lname": "Rakchat",
+    "lnameTH": "รักชาติ",
+    "pword": "123",
+    "uname": "Ratchatzaza"
+}
+
+"login data":{
+    "pword": "123",
+    "uname": "Rakchat@gmail.com"
+}
+
+
+{
+    "class2":{ //class
+        "coach1":{ //coach
+            "row1":{ //row
+                "A": true
+            }
+        }
+    }
+}
+
+[
+    {
+        "class": 2,
+        "coach": 1,
+        "seat": [
+            {
+                "row": 1,
+                "column": "A",
+                "isReserv": false
+            },
+            {
+                "row": 1,
+                "column": "B",
+                "isReserv": false
+            },
+            {
+                "row": 1,
+                "column": "C",
+                "isReserv": false
+            },
+            {
+                "row": 1,
+                "column": "D",
+                "isReserv": false
+            },
+            {
+                "row": 2,
+                "column": "A",
+                "isReserv": true
+            },
+            {
+                "row": 2,
+                "column": "B",
+                "isReserv": true
+            }
+            
+        ]
+    },
+    {
+        "class": 2,
+        "coach": 2,
+        "seat": [
+            {
+                "row": 1,
+                "column": "A",
+                "isReserv": false
+            },
+            {
+                "row": 1,
+                "column": "B",
+                "isReserv": false
+            }
+        ]
+    }
+]

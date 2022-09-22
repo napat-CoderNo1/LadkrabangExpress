@@ -1,0 +1,289 @@
+@use "../../assets/styles/utils" as *;
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-input-animation($box-width) {
+  position: relative;
+  width: $box-width;
+  height: 2.7rem;
+  transition: all $transition-time ease-in-out;
+
+  input {
+    padding: 0 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4em;
+    outline: none;
+    font-size: 1em;
+    transition: all $transition-time ease-in-out;
+    @include languify() {
+      font-family: l(subtitle-font);
+    }
+    @include themify() {
+      background-color: t(main-bg-color);
+      color: t(main-font-color);
+      border: 0.08em solid t(font-color-2);
+    }
+
+    &[type="date"]::-webkit-calendar-picker-indicator,
+    &[type="time"]::-webkit-calendar-picker-indicator {
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        @if t(main-font-color) == #fff {
+          filter: invert(1);
+        } @else {
+          filter: invert(0);
+        }
+      }
+    }
+
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &:disabled {
+      content: "";
+      @include themify() {
+        border-color: t("faded");
+      }
+
+      ~ label {
+        cursor: default;
+        @include themify() {
+          color: t("faded");
+        }
+      }
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      @include themify() {
+        border-color: t(main-color);
+      }
+    }
+    &:focus:disabled,
+    &:not(:placeholder-shown):disabled {
+      border-color: red;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 0.5em;
+    top: 0.7em;
+    padding: 0 0.5em;
+    cursor: text;
+    transition-property: top, left, font, color, background;
+    transition-duration: calc($transition-time / 2), calc($transition-time / 2),
+      calc($transition-time / 2), calc($transition-time / 2), $transition-time;
+    transition-timing-function: ease-in-out;
+    @include themify() {
+      background-color: t(main-bg-color);
+      color: t(font-color-2);
+    }
+
+    span {
+      color: red;
+    }
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    top: -0.63em;
+    left: 0.8em;
+    font-size: 0.8em;
+    cursor: default;
+
+    span {
+      display: none;
+    }
+  }
+
+  input:focus:not(:disabled) ~ label,
+  input:not(:placeholder-shown):not(:disabled) ~ label {
+    @include themify() {
+      color: t(main-color);
+    }
+  }
+}
+
+.booking-form {
+  @include centered-flex;
+  height: calc(100vh - $navbar-height);
+  padding-bottom: $navbar-height;
+  transition: all $transition-time ease-in-out;
+  @include themify() {
+    background-color: t("main-bg-color");
+    color: t("main-font-color");
+  }
+  @include languify() {
+    font: 500 1rem l("body-font");
+  }
+
+  legend {
+    @include centered-flex;
+    overflow-wrap: break-word;
+    padding: 0 0.3em;
+    width: 88%;
+    @include languify() {
+      font: 1000 2.8rem l(navigation-font);
+    }
+  }
+
+  &__container {
+    @include centered-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5rem 6rem 7rem 6rem;
+    border-radius: 1rem;
+    width: 60vw;
+    @include themify() {
+      border: 0.2rem solid t(main-color);
+    }
+  }
+
+  &__form {
+    @include centered-flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    width: 100%;
+
+    &__first-row,
+    &__second-row,
+    &__third-row,
+    &__optional-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1.5rem;
+      transition: all $transition-time ease-in-out;
+    }
+
+    &__second-row {
+      &__group {
+        @include centered-flex;
+        gap: 1.5rem;
+        width: 50%;
+      }
+    }
+
+    &__third-row {
+      justify-content: space-around;
+      width: 70%;
+    }
+
+    @for $i from 1 through 100 {
+      &__#{$i} {
+        $percent: 1% * $i;
+        @include text-input-animation($percent);
+      }
+    }
+
+    &__checkbox {
+      label {
+        @include centered-flex;
+        position: relative;
+        padding-left: 2rem;
+        cursor: pointer;
+
+        div {
+          width: 3.5rem;
+        }
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+
+          &:checked ~ span {
+            background-color: yellowgreen;
+
+            &::after {
+              display: block;
+            }
+          }
+        }
+
+        span:after {
+          left: 0.47rem;
+          top: 0.18rem;
+          width: 0.4rem;
+          height: 0.8rem;
+          border: solid white;
+          border-width: 0 0.1rem 0.1rem 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: #eee;
+
+        border-radius: 15px;
+      }
+      span:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+
+    &__errors {
+      @include centered-flex;
+      width: 100%;
+      height: 3.5rem;
+      text-align: center;
+      border-radius: 0.2rem;
+      overflow: hidden;
+      background-color: red;
+      @include themify() {
+        color: #fff;
+      }
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    height: 2.8em;
+    right: 4rem;
+    bottom: -1.4em;
+    padding: 0.5em 1em;
+    border: 0.1rem solid orange;
+    border-radius: 0.4rem;
+    transition: all $transition-time ease-in-out;
+    @include languify() {
+      font: 600 1.2em l(subtitle-font);
+    }
+    @include themify() {
+      background-color: t(main-bg-color);
+      color: t("main-font-color");
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      @include themify() {
+        background-color: t(color-3);
+      }
+    }
+  }
+}

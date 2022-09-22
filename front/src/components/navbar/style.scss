@@ -1,0 +1,215 @@
+@use "../../assets/styles/utils" as *;
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $navbar-height;
+  padding: 0 1.2rem;
+  z-index: 20;
+  position: relative;
+  // position: sticky;
+  // top: 0;
+  transition: all $transition-time ease-in-out;
+  @include languify() {
+    font: 500 1.2rem l(navigation-font);
+  }
+  @include themify() {
+    background-color: t(main-bg-color);
+  }
+
+  &.preload * {
+    $null-transition: none !important;
+
+    -webkit-transition: $null-transition;
+    -moz-transition: $null-transition;
+    -ms-transition: $null-transition;
+    -o-transition: $null-transition;
+    transition: $null-transition;
+  }
+
+  * {
+    transition: all $transition-time ease-in-out;
+    @include themify() {
+      color: t("main-font-color");
+    }
+  }
+
+  &__container {
+    @include centered-flex;
+    flex: 1;
+
+    &:first-child a {
+      margin-right: auto;
+    }
+
+    &:last-child div {
+      margin-left: auto;
+    }
+  }
+
+  &__logo {
+    @include centered-flex;
+    position: relative;
+    width: 4.5rem;
+    height: $navbar-height;
+    transition: opacity $transition-time ease-in-out;
+
+    &__icon {
+      position: absolute;
+      opacity: 1;
+      width: 4.5rem;
+      pointer-events: none;
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__list {
+    @include centered-flex;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      width: 10rem;
+      list-style: none;
+      transition: all $transition-time ease-in-out;
+
+      a {
+        line-height: $navbar-height;
+        display: block;
+        text-decoration: none;
+      }
+
+      &:hover {
+        @include themify() {
+          background-color: t(bg-color-2);
+        }
+
+        > ul {
+          height: 240%;
+        }
+      }
+    }
+
+    &__dropdown {
+      line-height: $navbar-height;
+      width: 10rem;
+      cursor: pointer;
+    }
+
+    &__sublist {
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      box-sizing: content-box;
+      @include languify() {
+        font: 300 0.8em l(subtitle-font);
+      }
+
+      li,
+      li a {
+        line-height: calc($navbar-height * 0.8);
+        transition: all calc($transition-time / 3) ease-in;
+        z-index: 99;
+        @include themify() {
+          background-color: t(bg-color-2);
+        }
+
+        &:hover {
+          @include themify() {
+            background-color: t(bg-color-3);
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    @include centered-flex;
+    gap: 1em;
+  }
+
+  &__auth {
+    li {
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      width: 12rem;
+      list-style: none;
+
+      a {
+        line-height: $navbar-height;
+        display: block;
+      }
+    }
+
+    &:hover {
+      > div {
+        @include themify() {
+          background-color: t(bg-color-2);
+        }
+      }
+
+      > ul {
+        height: 160%;
+      }
+    }
+
+    > a {
+      margin: 0 3rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__list {
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      width: 12rem;
+      @include languify() {
+        font: 300 0.8em l(subtitle-font);
+      }
+      @include themify() {
+        background-color: t(bg-color-2);
+      }
+
+      li div {
+        cursor: pointer;
+      }
+
+      li,
+      li a {
+        line-height: calc(0.8 * $navbar-height);
+        transition: all calc($transition-time / 2) ease-in;
+
+        &:hover {
+          @include themify() {
+            background-color: t(bg-color-3);
+          }
+        }
+      }
+    }
+
+    &__dropdown {
+      @include centered-flex;
+      height: $navbar-height;
+      width: 12rem;
+      @include languify() {
+        font: 900 0.9em l(subtitle-font);
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@use "./palette";
+@use "./light";
+@use "./dark";
+@use "./fontTH";
+@use "./fontEN";
+
+$transition-time: 0.2s;
+$navbar-height: 3.8rem;
+
+$langs: (
+  th: (
+    navigation-font: fontTH.$navigation-font,
+    title-font: fontTH.$title-font,
+    subtitle-font: fontTH.$subtitle-font,
+    body-font: fontTH.$body-font,
+    title-font-bal-ratio: fontTH.$title-font-bal-ratio,
+  ),
+  en: (
+    navigation-font: fontEN.$navigation-font,
+    title-font: fontEN.$title-font,
+    subtitle-font: fontEN.$subtitle-font,
+    body-font: fontEN.$body-font,
+    title-font-bal-ratio: fontEN.$title-font-bal-ratio,
+  ),
+);
+
+$themes: (
+  light: (
+    main-color: palette.$main-color,
+    color-2: palette.$color-2,
+    color-3: palette.$color-3,
+    color-4: palette.$color-4,
+    color-5: palette.$color-5,
+    main-bg-color: light.$main-bg-color,
+    bg-color-2: light.$bg-color-2,
+    bg-color-3: light.$bg-color-3,
+    bg-color-4: light.$bg-color-4,
+    bg-color-5: light.$bg-color-5,
+    main-font-color: light.$main-font-color,
+    font-color-2: light.$font-color-2,
+    font-color-3: light.$font-color-3,
+    font-color-4: light.$font-color-4,
+    font-color-5: light.$font-color-5,
+    faded: light.$faded,
+  ),
+  dark: (
+    main-color: palette.$main-color,
+    color-2: palette.$color-2,
+    color-3: palette.$color-3,
+    color-4: palette.$color-4,
+    color-5: palette.$color-5,
+    main-bg-color: dark.$main-bg-color,
+    bg-color-2: dark.$bg-color-2,
+    bg-color-3: dark.$bg-color-3,
+    bg-color-4: dark.$bg-color-4,
+    bg-color-5: dark.$bg-color-5,
+    main-font-color: dark.$main-font-color,
+    font-color-2: dark.$font-color-2,
+    font-color-3: dark.$font-color-3,
+    font-color-4: dark.$font-color-4,
+    font-color-5: dark.$font-color-5,
+    faded: dark.$faded,
+  ),
+);
+
+@mixin themify() {
+  @each $theme, $map in $themes {
+    html[data-theme="#{$theme}"] & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@mixin languify() {
+  @each $lang, $map in $langs {
+    html[lang="#{$lang}"] & {
+      $lang-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($langs, $lang), "#{$key}");
+        $lang-map: map-merge(
+          $lang-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $lang-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
+
+@function l($key) {
+  @return map-get($lang-map, $key);
+}

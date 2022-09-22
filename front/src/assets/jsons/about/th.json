@@ -1,0 +1,66 @@
+{
+  "title": "ลาดกระบังเอ็กซ์เพรส",
+  "subtitle": "โครงงานจองตั๋วรถไฟ",
+  "subsubtitle": "กลุ่มของเรามาจากสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังชั้นปีที่ 2 คณะวิศวกรรมศาสตร์ ภาควิชาคอมพิวเตอร์ หลักสูตรปกติ โปรเจคนี้เป็นเพียงส่วนหนึ่งของวิชา 01076008 Software Development Processes ซึ่งมุ่งเน้นการออกแบบและวางแผนโครงงานเพื่อการทำงานที่มีประสิทธิภาพ ทางเราไม่ได้มีเจตนาในการซื้อขายเชิงพาณิชย์ใด ๆ ทั้งสิ้น หากมีข้อสงสัยหรือปัญหาโปรดติดต่อข้อมูลการติดต่อด้านล่าง ทางเราขอขอบพระคุณเป็นอย่างสูง",
+  "copyright": "© 2022 ทีมงานลาดกระบังเอ็กซ์เพรส",
+  "email": "63010183@kmitl.ac.th",
+  "location": "ลาดกระบัง, กรุงเทพฯ, ประเทศไทย",
+  "about": "รู้จักพวกเรา",
+  "members": [
+    {
+      "fname": "จิรกานต์",
+      "lname": "กุลสิงห์",
+      "position": "ผู้พัฒนา Back-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148000758792192/copter.jpg",
+      "instagram": "https://www.instagram.com/ter_krub/",
+      "github": "https://github.com/TerKrubKrub"
+    },
+    {
+      "fname": "ณภัทร",
+      "lname": "มูลพินิจ",
+      "position": "ผู้พัฒนา Back-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148001752862730/napat.jpg",
+      "instagram": "https://www.instagram.com/napatxlife/",
+      "github": "https://github.com/napat-CoderNo1"
+    },
+    {
+      "fname": "ชินกฤต",
+      "lname": "ปิ่นคล้าย",
+      "position": "ผู้พัฒนา Back-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148257190158376/glock.jpg",
+      "instagram": "https://www.instagram.com/monsieur_glock/",
+      "github": "https://github.com/MonsieurGlock"
+    },
+    {
+      "fname": "ชนน",
+      "lname": "กุลกัตติมาส",
+      "position": "ผู้พัฒนา Front-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969149000647335936/chanon.jpg",
+      "instagram": "https://www.instagram.com/gchax/",
+      "github": "https://github.com/gchax"
+    },
+    {
+      "fname": "กิตติภณ",
+      "lname": "สิงห์ชม",
+      "position": "ผู้พัฒนา Front-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148000289046558/boss.jpg",
+      "instagram": "https://www.instagram.com/kittiboss__/",
+      "github": "https://github.com/bossk774158"
+    },
+    {
+      "fname": "ณพงศ์",
+      "lname": "เคหะ",
+      "position": "ผู้พัฒนา Front-end",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148001547337778/gorn.jpg",
+      "instagram": "https://www.instagram.com/napong.g/",
+      "github": "https://github.com/1napong1"
+    }
+  ],
+  "contact": {
+    "title": "ติดต่อเรา",
+    "name": "ชื่อของคุณ",
+    "email": "อีเมลของคุณ",
+    "content": "คุยกับพวกเรา",
+    "submit": "ส่ง"
+  }
+}

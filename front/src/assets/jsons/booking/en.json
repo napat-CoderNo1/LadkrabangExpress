@@ -1,0 +1,75 @@
+{
+  "progressbar": {
+    "trains": "Trains",
+    "classes": "Classes",
+    "seats": "Seats",
+    "foods": "Foods",
+    "checkout": "Checkout"
+  },
+  "form": {
+    "header": "Find the best train for your trip",
+    "fields": {
+      "origin": "Origin",
+      "destination": "Destination",
+      "date": "Date",
+      "time": "Time",
+      "passengers": "Passengers",
+      "returnDate": "Return date",
+      "returnTime": "Return time"
+    },
+    "buttons": {
+      "round": "Round",
+      "continue": "Continue"
+    },
+    "errors": {
+      "missingInput": "Please enter all required fields.",
+      "earlyReturn": "The return date and time must be in the future of the outward journey and not more than the next 30 days.",
+      "invalidStations": "Please check your origin and destination stations.",
+      "routeErr": "There's currently no trains on this route yet."
+    }
+  },
+  "train": {
+    "depTime": "Departure on",
+    "pax": "Passengers",
+    "trainNo": "Train No.",
+    "seatsAvail": "Seat(s) available",
+    "price": "from"
+  },
+  "class": [
+    {
+      "header": "1st Class",
+      "list": ["Compartment car", "Air-cons", "Spacious"]
+    },
+    { "header": "2nd Class", "list": ["Saloon car", "Air-cons"] },
+    { "header": "3rd Class", "list": ["Saloon car", "Fans"] }
+  ],
+  "seat": {
+    "wantSelectSeat": "Select seat (+฿10 / seat)",
+    "legend": {
+      "main": "You selected ",
+      "of": " of "
+    },
+    "coachNo": "Coach : ",
+    "selectedSeats": "Selected Seats : ",
+    "showcase": {
+      "avail": "Available",
+      "occup": "Occupied",
+      "seled": "Selected"
+    }
+  },
+  "checkout": {
+    "header": "Payment Information",
+    "name": "Card Holder Name",
+    "num": "Card Number",
+    "exp": "Expiraion Date",
+    "cvc": "CVV/CVC"
+  },
+  "refund": {
+    "header": "Refund Request",
+    "name": "Name",
+    "email": "Email",
+    "reason": "Please state the reason",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}

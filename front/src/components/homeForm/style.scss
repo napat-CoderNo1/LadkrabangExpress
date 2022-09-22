@@ -1,0 +1,112 @@
+@use "../../assets/styles/utils" as *;
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$footer-size: calc(1.8 * $navbar-height);
+
+.home-form {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: $footer-size;
+  width: 100%;
+  transition: all $transition-time ease-in-out;
+  @include themify() {
+    background-color: t(main-bg-color);
+    color: t("main-font-color");
+  }
+
+  &__form {
+    @include centered-flex;
+    width: calc(100% - $footer-size);
+    height: 100%;
+
+    &__item {
+      @include centered-flex;
+      width: 100%;
+      height: 100%;
+
+      label {
+        padding-bottom: 0.2rem;
+        position: relative;
+        width: 80%;
+        height: 55%;
+
+        input {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 60%;
+          padding-left: 0.2rem;
+          outline: none;
+          border: none;
+          transition: all $transition-time ease-in-out;
+          @include themify() {
+            background-color: t(main-bg-color);
+            border-bottom: 0.05rem solid t(font-color-2);
+            color: t("main-font-color");
+          }
+          @include languify() {
+            font-family: l(body-font);
+            font-size: 1.2rem;
+          }
+
+          &:focus {
+            @include themify() {
+              border-bottom-color: t(main-color);
+            }
+          }
+
+          &[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 40%;
+          font-style: italic;
+          transition: font-color $transition-time ease-in-out;
+          @include languify() {
+            font-family: l(title-font);
+            font-weight: calc(400 - l(title-font-bal-ratio));
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: $footer-size;
+    cursor: pointer;
+    border: none;
+    @include themify() {
+      background-color: t(main-color);
+    }
+    @include languify() {
+      font: 200 2rem l(subtitle-font);
+      color: #fff;
+    }
+
+    &:active {
+      @include themify() {
+        background-color: t(color-2);
+      }
+    }
+  }
+}

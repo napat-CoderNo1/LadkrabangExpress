@@ -1,0 +1,66 @@
+{
+  "title": "Ladkrabang Express",
+  "subtitle": "Train Booking Project",
+  "subsubtitle": "We are sophomores of Computer Engineering from King Mongkut's Institute of Technology Ladkrabang. This group project represents 01076008 Software Development Processes and is for educational purposes only, which is mainly about project design, planning and management, i.e., we do not wish to pursue in any commercial or profitable action. If you have any questions or problems, please contact the information provided down below. We thank you from the bottom of our hearts.",
+  "copyright": "© 2022 Ladkrabang Express Team",
+  "email": "63010183@kmitl.ac.th",
+  "location": "Ladkrabang, Bangkok, Thailand",
+  "about": "About Us",
+  "members": [
+    {
+      "fname": "Jirakan",
+      "lname": "Koollasing",
+      "position": "Back-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148000758792192/copter.jpg",
+      "instagram": "https://www.instagram.com/ter_krub/",
+      "github": "https://github.com/TerKrubKrub"
+    },
+    {
+      "fname": "Napat",
+      "lname": "Moonpinij",
+      "position": "Back-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148001752862730/napat.jpg",
+      "instagram": "https://www.instagram.com/napatxlife/",
+      "github": "https://github.com/napat-CoderNo1"
+    },
+    {
+      "fname": "Chinakit",
+      "lname": "Pinclay",
+      "position": "Back-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148257190158376/glock.jpg",
+      "instagram": "https://www.instagram.com/monsieur_glock/",
+      "github": "https://github.com/MonsieurGlock"
+    },
+    {
+      "fname": "Chanon",
+      "lname": "Gulgattimas",
+      "position": "Front-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969149000647335936/chanon.jpg",
+      "instagram": "https://www.instagram.com/gchax/",
+      "github": "https://github.com/gchax"
+    },
+    {
+      "fname": "Kittiphon",
+      "lname": "Singchom",
+      "position": "Front-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148000289046558/boss.jpg",
+      "instagram": "https://www.instagram.com/kittiboss__/",
+      "github": "https://github.com/bossk774158"
+    },
+    {
+      "fname": "Napong",
+      "lname": "Keha",
+      "position": "Front-end developer",
+      "pic": "https://cdn.discordapp.com/attachments/791628263822196737/969148001547337778/gorn.jpg",
+      "instagram": "https://www.instagram.com/napong.g/",
+      "github": "https://github.com/1napong1"
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "name": "Your Name",
+    "email": "Your Email",
+    "content": "Tell us more",
+    "submit": "Send"
+  }
+}

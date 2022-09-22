@@ -1,0 +1,351 @@
+@use "../../assets/styles/utils" as *;
+
+.seat-picker {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  transition: all $transition-time ease-in-out;
+  @include themify() {
+    border: 0.2rem solid t(main-color);
+  }
+
+  &.disabled {
+    * {
+      cursor: default;
+      @include themify() {
+        color: t(font-color-2);
+      }
+    }
+
+    @include themify() {
+      border-color: t(font-color-4);
+    }
+  }
+
+  &.disabled &__seat svg {
+    @include themify() {
+      fill: t(font-color-4);
+    }
+  }
+
+  * {
+    @include languify() {
+      font: 400 1rem l(subtitle-font);
+    }
+  }
+
+  legend {
+    margin-right: 10%;
+    padding: 0 1rem;
+    transition: all $transition-time ease-in-out;
+    @include themify() {
+      color: t("main-font-color");
+    }
+    @include languify() {
+      font: 600 1.2rem l(subtitle-font);
+    }
+
+    span {
+      @include languify() {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 70vw;
+    height: 100%;
+  }
+
+  &__overflow {
+    height: 80%;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: margin calc($transition-time * 2)
+      cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  &__coach {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        color: t("main-font-color");
+      }
+    }
+  }
+
+  @for $i from 1 through 16 {
+    &__row-#{$i} {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05vw;
+      position: relative;
+
+      &:first-child {
+        margin-left: 1vw;
+
+        div:nth-child(n) {
+          &::before {
+            display: inline-block;
+            position: absolute;
+            width: 2.2vw;
+            line-height: 2.2vw;
+            left: -2.2vw;
+            vertical-align: center;
+            text-align: center;
+            @include themify() {
+              color: t(font-color-4);
+            }
+            @include languify() {
+              font-size: smaller;
+            }
+          }
+        }
+
+        div:nth-child(1) {
+          &::before {
+            content: "A";
+          }
+        }
+
+        div:nth-child(2) {
+          &::before {
+            content: "B";
+          }
+        }
+
+        div:nth-child(3) {
+          &::before {
+            content: "C";
+          }
+        }
+
+        div:nth-child(4) {
+          &::before {
+            content: "D";
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        margin-right: 1vw;
+      }
+
+      &:nth-child(n) {
+        div:nth-child(1) {
+          &::after {
+            content: "#{$i}";
+            display: inline-block;
+            position: absolute;
+            width: 1.8vw;
+            line-height: 1.8vw;
+            top: -1.8vw;
+            left: 0.2vw;
+            vertical-align: center;
+            text-align: center;
+            @include themify() {
+              color: t(font-color-4);
+            }
+            @include languify() {
+              font-size: smaller;
+            }
+          }
+        }
+
+        div:nth-child(3) {
+          margin-top: 1vw;
+        }
+      }
+
+      &__index {
+        position: absolute;
+        top: -10%;
+        width: 2.2vw;
+        text-align: center;
+      }
+    }
+  }
+
+  &__seat {
+    &-index {
+      height: 10%;
+      @include themify() {
+        color: t("main-font-color");
+      }
+    }
+
+    > svg {
+      transition: all $transition-time ease-in-out;
+      cursor: pointer;
+      @include languify() {
+        font-size: 2.2vw;
+      }
+      @include themify() {
+        fill: t(font-color-5);
+      }
+    }
+
+    &.occupied > svg {
+      cursor: default;
+      @include themify() {
+        fill: t(faded);
+      }
+    }
+
+    &.selected > svg {
+      @include themify() {
+        fill: t(main-color);
+      }
+    }
+
+    &.obsolete > svg {
+      cursor: default;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  @for $i from 1 through 10 {
+    #slide#{$i}:checked ~ &__inner {
+      $percent: -100% * ($i - 1);
+      margin-left: $percent;
+    }
+
+    #slide#{$i}:checked ~ &__control label:nth-child(#{$i}) {
+      @include themify() {
+        background-color: t(main-color);
+      }
+    }
+
+    #slide#{$i}:checked:disabled ~ &__control label:nth-child(#{$i}) {
+      @include themify() {
+        background-color: t(font-color-4);
+      }
+    }
+  }
+
+  &__control {
+    button {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      width: 2.2rem;
+      border-radius: 100%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: calc(50% - 1.1rem);
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        background-color: t(color-2);
+      }
+
+      svg {
+        color: black;
+      }
+
+      &:disabled {
+        @include themify() {
+          background-color: rgb(165, 165, 165);
+        }
+      }
+
+      &:hover:not(:disabled) {
+        transform: scale(1.05);
+      }
+
+      &:first-child {
+        left: 5vw;
+      }
+
+      &:nth-child(2) {
+        right: 5vw;
+      }
+    }
+
+    &__bullets {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 30%;
+      text-align: center;
+
+      label {
+        cursor: pointer;
+        display: inline-block;
+        width: 0.6vw;
+        height: 0.6vw;
+        border-radius: 100%;
+        background: #ccc;
+        margin: 0 0.6vw;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 60vw;
+    transition: all $transition-time ease-in-out;
+    @include themify() {
+      color: t("main-font-color");
+    }
+
+    li {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      svg {
+        cursor: default;
+      }
+    }
+  }
+}

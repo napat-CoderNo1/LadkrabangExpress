@@ -1,0 +1,17 @@
+{
+  "header": "Profile",
+  "info": {
+    "header": "Your Profile",
+    "fname": "First Name",
+    "lname": "Last Name",
+    "email": "Email",
+    "uname": "Username",
+    "edit": "Edit Profile",
+    "cancel": "Cancel",
+    "save": "Save",
+    "changePword": "Change Password"
+  },
+  "booking": {
+    "header": "Your Booking"
+  }
+}

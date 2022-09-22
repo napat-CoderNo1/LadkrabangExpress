@@ -1,0 +1,10 @@
+{
+    "class2":{
+        "numberOfCoach": 3,
+        "seatPerCoach": 64
+    },
+    "class3":{
+        "numberOfCoach": 5,
+        "seatPerCoach": 64
+    }
+}

@@ -1,0 +1,180 @@
+@use "../../assets/styles/utils" as *;
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-input-animation($box-width) {
+  position: relative;
+  width: $box-width;
+  height: 2.7rem;
+
+  input {
+    padding: 0 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4em;
+    outline: none;
+    font-size: 1.2em;
+    transition: all $transition-time ease-in-out;
+    @include themify() {
+      background-color: t(main-bg-color);
+      color: t(main-font-color);
+      border: 0.08em solid t(font-color-2);
+    }
+    @include languify() {
+      font-family: l(subtitle-font);
+    }
+
+    &[type="password"]::-ms-reveal {
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        @if t(main-font-color) == #fff {
+          filter: invert(1);
+        } @else {
+          filter: invert(0);
+        }
+      }
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      @include themify() {
+        border-color: t(main-color);
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 0.5em;
+    top: 0.7em;
+    padding: 0 0.5em;
+    cursor: text;
+    transition-property: top, left, font, color, background;
+    transition-duration: calc($transition-time / 2), calc($transition-time / 2),
+      calc($transition-time / 2), calc($transition-time / 2), $transition-time;
+    transition-timing-function: ease-in-out;
+    @include themify() {
+      background-color: t(main-bg-color);
+      color: t(font-color-2);
+    }
+    @include languify() {
+      font-family: l(subtitle-font);
+    }
+
+    span {
+      @include themify() {
+        color: red;
+      }
+    }
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    top: -0.63em;
+    left: 0.8em;
+    font-size: 0.8em;
+    cursor: default;
+    @include themify() {
+      color: t(main-color);
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 2.2 * $navbar-height);
+  transition: all $transition-time ease-in-out;
+  @include themify() {
+    color: t("main-font-color");
+  }
+
+  &__container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__content {
+    position: relative;
+    width: 120%;
+    height: calc(100vh - 4 * $navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  &__ticket {
+    padding: 0.2rem 0;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 1.5rem;
+    width: 60%;
+    max-height: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  fieldset {
+    @include centered-flex;
+    width: 35%;
+    height: 95%;
+    border-radius: 1.5rem;
+    @include themify() {
+      border: 0.2rem solid t(font-color-3);
+    }
+
+    legend {
+      padding: 0 0.8rem;
+      @include languify() {
+        font: 700 1.8rem l(navigation-font);
+      }
+    }
+  }
+
+  &__payment {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 40%;
+    }
+
+    &__group {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    @for $i from 1 through 100 {
+      &__#{$i} {
+        padding: 1rem 0;
+        $percent: 1% * $i;
+        @include text-input-animation($percent);
+      }
+    }
+  }
+}

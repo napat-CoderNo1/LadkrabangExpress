@@ -1,0 +1,122 @@
+@use "../../../assets/styles/utils" as *;
+
+.display-ticket {
+  width: 100%;
+  height: calc(100vh - $navbar-height);
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header {
+    width: 80vw;
+    height: calc(2 * $navbar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > a {
+      display: flex;
+      flex: 2;
+      justify-content: center;
+      align-items: center;
+
+      > h1 {
+        @include themify() {
+          color: t(main-font-color);
+        }
+        @include languify() {
+          font: 200 - l(title-font-bal-ratio) 3rem l(title-font);
+        }
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      button,
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        cursor: pointer;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.4rem;
+        border: none;
+        transition: all $transition-time ease-in-out;
+        @include languify() {
+          font: 600 1vw l(subtitle-font);
+        }
+        @include themify() {
+          color: t(main-font-color);
+          background-color: t(main-bg-color);
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        &:active {
+          transform: scale(1.1);
+        }
+      }
+      
+      button {
+        @include languify() {
+          font-size: 2vw;
+        }
+      }
+    }
+
+    a:not(:nth-child(2)) {
+      border: 0.1rem solid orange;
+    }
+  }
+
+  &__content {
+    width: 80%;
+    height: calc(100vh - 4 * $navbar-height);
+    display: flex;
+    align-items: center;
+
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      width: 30%;
+
+      img {
+        width: 90%;
+      }
+    }
+
+    > div:last-child {
+      padding: 0.2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      width: 70%;
+      max-height: 100%;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

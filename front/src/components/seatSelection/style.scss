@@ -1,0 +1,120 @@
+@use "../../assets/styles/utils" as *;
+
+.seat-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2.2 * $navbar-height);
+    width: 70%;
+
+    > section {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+      gap: 1.5vw;
+      text-align: center;
+      @include themify() {
+        color: t(main-font-color);
+      }
+      @include languify() {
+        font: 400 1.5vw l(subtitle-font);
+      }
+
+      svg {
+        cursor: pointer;
+        align-self: center;
+        font-size: 5vw;
+        transition: transform calc($transition-time * 2) ease-in-out,
+          color $transition-time ease-in-out;
+
+        &:hover {
+          transform: rotate(360deg) scale(1.4);
+        }
+
+        &:active {
+          transition: transform calc($transition-time / 5) ease-in-out;
+          transform: rotate(370deg) scale(1.35);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    padding-left: 2rem;
+    height: calc(1.8 * $navbar-height);
+    display: flex;
+    align-items: center;
+    @include languify() {
+      font: 400 1rem l(subtitle-font);
+    }
+    @include themify() {
+      color: t(main-font-color);
+    }
+
+    > label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding-left: 2rem;
+      cursor: pointer;
+
+      > div {
+        display: inline-block;
+        transition: all $transition-time ease-in-out;
+        @include languify() {
+          font-size: 1.2rem;
+        }
+      }
+
+      > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ span {
+          background-color: yellowgreen;
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+
+      > span::after {
+        left: 0.5rem;
+        top: 0.18rem;
+        width: 0.4rem;
+        height: 0.8rem;
+        border: solid white;
+        border-width: 0 0.1rem 0.1rem 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: #eee;
+      border-radius: 15px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+  }
+}

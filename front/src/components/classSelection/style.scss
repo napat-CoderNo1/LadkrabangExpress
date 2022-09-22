@@ -1,0 +1,112 @@
+@use "../../assets/styles/utils" as *;
+
+.class-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  * {
+    @include themify() {
+      color: t("main-font-color");
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2.2 * $navbar-height);
+    width: 70%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    cursor: pointer;
+    transition: transform $transition-time linear;
+    @include languify() {
+      font: 400 1rem l(subtitle-font);
+    }
+
+    &__container {
+      padding: 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+
+      input[type="radio"] {
+        display: none;
+
+        &:checked + label {
+          transform: scale(1.05);
+          @include themify() {
+            border: 4px solid t(main-color);
+            border-radius: 1.8rem;
+          }
+        }
+
+        &:disabled + label {
+          cursor: default;
+          img {
+            filter: grayscale(1);
+          }
+
+          > div {
+            h1,
+            li {
+              @include themify() {
+                color: t(font-color-3);
+              }
+            }
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      margin: 0;
+      padding: 0;
+      border-radius: 1.5rem 1.5rem 0 0;
+      width: 100%;
+      height: 45%;
+      background-size: cover;
+    }
+
+    &__info {
+      position: relative;
+      padding: 1rem;
+      border-radius: 0 0 1.5rem 1.5rem;
+      width: 100%;
+      height: 55%;
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        background-color: t(bg-color-2);
+      }
+
+      > h1 {
+        transition: all $transition-time ease-in-out;
+        padding: 0.8rem 0.2rem;
+      }
+
+      > ul {
+        padding-left: 1.2rem;
+        line-height: 150%;
+
+        li {
+          transition: all $transition-time ease-in-out;
+        }
+      }
+
+      > span {
+        transform: scale(1.5);
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "register": {
+    "header": "Create your account",
+    "fields": {
+      "fname": "First Name",
+      "lname": "Last Name",
+      "email": "Email",
+      "uname": "Username",
+      "pword": "Password",
+      "repwd": "Confirm Password"
+    },
+    "buttons": {
+      "back": "Back",
+      "submit": "Submit"
+    },
+    "errors": {
+      "missingInput": "Please enter all required fields.",
+      "invalidPword": "Password must include at least 8 characters, a number and at least one capital letter.",
+      "invalidRepwd": "Passwords do not match.",
+      "invalidAcc": "This username or email is already taken."
+    },
+    "staff": {
+      "header": "Create a staff account"
+    }
+  },
+  "login": {
+    "header": "Log in to continue",
+    "fields": {
+      "username": "Username or email",
+      "password": "Password"
+    },
+    "forgot": "Forgot password ?",
+    "register": "Create an account",
+    "button": "Log In",
+    "errors": {
+      "missingInput": "Please enter all required fields.",
+      "invalidLogin": "Username or password is/are incorrect."
+    },
+    "staff": {
+      "header": "Log into staff section",
+      "forgot": ""
+    }
+  },
+  "changePword": {
+    "header": "Change Password",
+    "new": "New Password",
+    "reNew": "Comfirm New Password",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "err": {
+      "missingInput": "Please enter all required fields.",
+      "invalid": "Password must include at least 8 characters, a number and at least one capital letter.",
+      "noMatch": "Passwords do not match."
+    }
+  },
+  "forgot": {
+    "legend": "Forgot Password",
+    "header": "Enter an email to continue",
+    "user": "Username or Email",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "confirmPword": {
+    "header": "Confirm password to continue",
+    "pword": "Password",
+    "submit": "Submit",
+    "back": "Back",
+    "forgot": "Forgot password ?",
+    "err": {
+      "missingInput": "Please enter all required fields.",
+      "incorrect": "Password incorrect."
+    }
+  }
+}

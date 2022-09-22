@@ -1,0 +1,1209 @@
+"379":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 4,
+    "departure_minute": 15},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 4,
+    "departure_minute": 30},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 5,
+    "departure_minute": 10},
+}
+
+"275":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 5,
+    "departure_minute": 55},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 6,
+    "departure_minute": 10},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 6,
+    "departure_minute": 15},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 6,
+    "departure_minute": 20},
+
+    {"station_name": "อโศก",
+    "departure_hour": 6,
+    "departure_minute": 26},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 6,
+    "departure_minute": 36},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 6,
+    "departure_minute": 43},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 6,
+    "departure_minute":48 },
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 6,
+    "departure_minute":55 },
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 7,
+    "departure_minute":00 },
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 7,
+    "departure_minute":03 },
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 7,
+    "departure_minute":11 },
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 7,
+    "departure_minute":15 },
+
+    {"station_name": "เปรง",
+    "departure_hour": 7,
+    "departure_minute":19 },
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 7,
+    "departure_minute":24 },
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 7,
+    "departure_minute":28 },
+
+    {"station_name": "บางเตย",
+    "departure_hour": 7,
+    "departure_minute":31 },
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 7,
+    "departure_minute":40 },
+
+    {"station_name": "บางน้ำเปรี้ยว",
+    "departure_hour": 8,
+    "departure_minute":01 },
+
+    {"station_name": "ชุมทางคลองสิบเก้า",
+    "departure_hour": 8,
+    "departure_minute":09 },
+
+    {"station_name": "โยทะกา",
+    "departure_hour": 8,
+    "departure_minute":23 },
+
+    {"station_name": "บ้านสร้าง",
+    "departure_hour": 8,
+    "departure_minute":33 },
+
+    {"station_name": "บ้านปากพลี",
+    "departure_hour": 8,
+    "departure_minute":50 },
+
+    {"station_name": "ปราจีนบุรี ",
+    "departure_hour": 8,
+    "departure_minute":58 },
+
+    {"station_name": "โคกมะกอก",
+    "departure_hour": 9,
+    "departure_minute":09 },
+
+    {"station_name": "ประจันตคาม",
+    "departure_hour": 9,
+    "departure_minute":16 },
+
+    {"station_name": "บ้านดงบัง",
+    "departure_hour": 9,
+    "departure_minute":30 },
+
+    {"station_name": "บ้านพรมแสง",
+    "departure_hour": 9,
+    "departure_minute":36 },
+
+    {"station_name": "กบินทร์บุรี",
+    "departure_hour": 9,
+    "departure_minute":48 },
+
+    {"station_name": "หนองสัง",
+    "departure_hour": 9,
+    "departure_minute":59 },
+
+    {"station_name": "พระปรง",
+    "departure_hour": 10,
+    "departure_minute": 10},
+
+    {"station_name": "บ้านแก้ง",
+    "departure_hour": 10,
+    "departure_minute": 18},
+
+    {"station_name": "ศาลาลำดวน",
+    "departure_hour": 10,
+    "departure_minute": 25},
+
+    {"station_name": "สระแก้ว",
+    "departure_hour": 10,
+    "departure_minute": 34},
+
+    {"station_name": "ท่าเกษม",
+    "departure_hour": 10,
+    "departure_minute": 45},
+
+    {"station_name": "ห้วยโจด",
+    "departure_hour": 10,
+    "departure_minute": 55},
+
+    {"station_name": "วัฒนานคร",
+    "departure_hour": 11,
+    "departure_minute": 06},
+
+    {"station_name": "ห้วยเดื่อ",
+    "departure_hour": 11,
+    "departure_minute": 25},
+
+    {"station_name": "อรัญประเทศ",
+    "departure_hour": 11,
+    "departure_minute": 35},
+}
+
+"997":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 6,
+    "departure_minute":45 },
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 6,
+    "departure_minute":59 },
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 7,
+    "departure_minute":07 },
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 7,
+    "departure_minute":15 },
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 7,
+    "departure_minute":28 },
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 7,
+    "departure_minute":33 },
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 8,
+    "departure_minute":02 },
+
+    {"station_name": "ชลบุรี",
+    "departure_hour": 8,
+    "departure_minute":37 },
+
+    {"station_name": "ชุมทางศรีราชา",
+    "departure_hour": 8,
+    "departure_minute":55 },
+
+    {"station_name": "พัทยา",
+        "departure_hour": 9,
+        "departure_minute":14 },
+
+    {"station_name": "ญาณสังวราราม",
+    "departure_hour": 9,
+    "departure_minute":34 },
+
+    {"station_name": "สวนนงนุช",
+    "departure_hour": 9,
+    "departure_minute":39 },
+
+    {"station_name": "บ้านพลูตาหลวง",
+    "departure_hour": 9,
+    "departure_minute":50 },
+}
+
+"283":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour":6 ,
+    "departure_minute":55 },
+
+    {"station_name": "พญาไท",
+    "departure_hour": 7,
+    "departure_minute":08 },
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 7,
+    "departure_minute":12 },
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 7,
+    "departure_minute":16 },
+
+    {"station_name": "อโศก",
+    "departure_hour": 7,
+    "departure_minute":22 },
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 7,
+    "departure_minute":40 },
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 7,
+    "departure_minute":49 },
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 7,
+    "departure_minute":57 },
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 8,
+    "departure_minute":06 },
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 8,
+    "departure_minute":10 },
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 8,
+    "departure_minute":14 },
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 8,
+    "departure_minute":24 },
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 8,
+    "departure_minute":29 },
+
+    {"station_name": "เปรง",
+    "departure_hour": 8,
+    "departure_minute":34 },
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 8,
+    "departure_minute":40 },
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour":8 ,
+    "departure_minute":46 },
+
+    {"station_name": "บางเตย",
+    "departure_hour": 8,
+    "departure_minute":51 },
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 8,
+    "departure_minute":59 },
+
+    {"station_name": "ดอนสีนนท์",
+    "departure_hour": 9,
+    "departure_minute":16 },
+
+    {"station_name": "พานทอง",
+    "departure_hour": 9,
+    "departure_minute":31 },
+
+    {"station_name": "ชลบุรี",
+    "departure_hour": 9,
+    "departure_minute":49 },
+
+    {"station_name": "บางพระ",
+    "departure_hour": 10,
+    "departure_minute": 00},
+
+    {"station_name": "เขาพระบาท",
+    "departure_hour": 10,
+    "departure_minute": 07},
+
+    {"station_name": "ชุมทางศรีราชา",
+    "departure_hour": 10,
+    "departure_minute": 13},
+
+    {"station_name": "บางละมุง",
+    "departure_hour": 10,
+    "departure_minute": 25},
+
+    {"station_name": "พัทยา",
+    "departure_hour": 10,
+    "departure_minute": 35},
+
+    {"station_name": "พัทยาใต้",
+    "departure_hour": 10,
+    "departure_minute": 40},
+
+    {"station_name": "บ้านห้วยขวาง",
+    "departure_hour": 10,
+    "departure_minute": 51},
+
+    {"station_name": "ญาณสังวราราม",
+    "departure_hour": 10,
+    "departure_minute": 57},
+
+    {"station_name": "สวนนงนุช",
+    "departure_hour": 11,
+    "departure_minute": 04},
+
+    {"station_name": "ชุมทางเขาชีจรรย์",
+        "departure_hour": 11,
+        "departure_minute": 13},
+
+    {"station_name": "บ้านพลูตาหลวง",
+    "departure_hour": 11,
+    "departure_minute": 20},
+}
+
+"285":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 6,
+    "departure_minute":55 },
+
+    {"station_name": "พญาไท",
+    "departure_hour": 7,
+    "departure_minute":08 },
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 7,
+    "departure_minute":12 },
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 7,
+    "departure_minute":16 },
+
+    {"station_name": "อโศก",
+    "departure_hour": 7,
+    "departure_minute":22 },
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 7,
+    "departure_minute":40 },
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 7,
+    "departure_minute":49 },
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 7,
+    "departure_minute":57 },
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 8,
+    "departure_minute":06 },
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 8,
+    "departure_minute":10 },
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 8,
+    "departure_minute":14 },
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 8,
+    "departure_minute":24 },
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 8,
+    "departure_minute":29 },
+
+    {"station_name": "เปรง",
+    "departure_hour": 8,
+    "departure_minute":34 },
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 8,
+    "departure_minute":40 },
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 8,
+    "departure_minute":46 },
+
+    {"station_name": "บางเตย",
+    "departure_hour": 8,
+    "departure_minute":51 },
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 8,
+    "departure_minute":56 },
+}
+
+"281":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 8,
+    "departure_minute":00 },
+
+    {"station_name": "พญาไท",
+    "departure_hour": 8,
+    "departure_minute":11 },
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 8,
+    "departure_minute":16 },
+
+    {"station_name": "อโศก",
+    "departure_hour": 8,
+    "departure_minute":20 },
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 8,
+    "departure_minute":26 },
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 8,
+    "departure_minute":35 },
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 8,
+    "departure_minute":44 },
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 8,
+    "departure_minute":51 },
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 8,
+    "departure_minute":55 },
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 8,
+    "departure_minute":57 },
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 9,
+    "departure_minute":06 },
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 9,
+    "departure_minute":10 },
+
+    {"station_name": "เปรง",
+    "departure_hour": 9,
+    "departure_minute":14 },
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 9,
+    "departure_minute":23 },
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 9,
+    "departure_minute":32 },
+
+    {"station_name": "บางน้ำเปรี้ยว",
+    "departure_hour": 9,
+    "departure_minute":53 },
+
+    {"station_name": "ชุมทางคลองสิบเก้า",
+    "departure_hour": 10,
+    "departure_minute": 00},
+
+    {"station_name": "โยทะกา",
+    "departure_hour": 10,
+    "departure_minute": 11},
+
+    {"station_name": "บ้านสร้าง",
+    "departure_hour": 10,
+    "departure_minute": 21},
+
+    {"station_name": "บ้านปากพลี",
+    "departure_hour": 10,
+    "departure_minute": 36},
+
+    {"station_name": "ปราจีนบุรี ",
+    "departure_hour": 10,
+    "departure_minute": 46},
+
+    {"station_name": "โคกมะกอก",
+    "departure_hour": 10,
+    "departure_minute": 58},
+
+    {"station_name": "ประจันตคาม",
+    "departure_hour": 11,
+    "departure_minute": 06},
+
+    {"station_name": "บ้านดงบัง",
+    "departure_hour": 11,
+    "departure_minute": 17},
+
+    {"station_name": "บ้านพรมแสง",
+    "departure_hour": 11,
+    "departure_minute": 23},
+
+    {"station_name": "กบินทร์บุรี",
+    "departure_hour": 11,
+    "departure_minute": 35},
+}
+
+"367":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 10,
+    "departure_minute": 10},
+
+    {"station_name": "อุรุพงษ์",
+    "departure_hour": 10,
+    "departure_minute": 20},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 10,
+    "departure_minute": 23},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 10,
+    "departure_minute": 30},
+
+    {"station_name": "อโศก",
+    "departure_hour": 10,
+    "departure_minute": 34},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 10,
+    "departure_minute": 40},
+
+    {"station_name": "สุขุมวิท71",
+    "departure_hour": 10,
+    "departure_minute": 43},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 10,
+    "departure_minute": 49},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 10,
+    "departure_minute": 56},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 11,
+    "departure_minute": 02},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 11,
+    "departure_minute": 07},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 11,
+    "departure_minute": 09},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 11,
+    "departure_minute": 18},
+
+    {"station_name": "เปรง",
+    "departure_hour": 11,
+    "departure_minute": 25},
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 11,
+    "departure_minute": 31},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 11,
+    "departure_minute": 35},
+
+    {"station_name": "บางเตย",
+    "departure_hour": 11,
+    "departure_minute": 40},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 11,
+    "departure_minute": 45},
+}
+
+"389":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour":12 ,
+    "departure_minute":10 },
+
+    {"station_name": "พญาไท",
+    "departure_hour": 12,
+    "departure_minute": 20},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 12,
+    "departure_minute": 23},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 12,
+    "departure_minute": 28},
+
+    {"station_name": "อโศก",
+    "departure_hour": 12,
+    "departure_minute": 32},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 12,
+    "departure_minute": 37},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 12,
+    "departure_minute": 44},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 12,
+    "departure_minute": 50},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 12,
+    "departure_minute": 57},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 13,
+    "departure_minute": 01},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 13,
+    "departure_minute": 04},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 13,
+    "departure_minute": 11},
+
+    {"station_name": "เปรง",
+    "departure_hour": 13,
+    "departure_minute": 17},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 13,
+    "departure_minute": 23},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 13,
+    "departure_minute": 30},
+}
+
+"279":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 13,
+    "departure_minute": 05},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 13,
+    "departure_minute": 13},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 13,
+    "departure_minute": 15},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 13,
+    "departure_minute": 17},
+
+    {"station_name": "อโศก",
+    "departure_hour": 13,
+    "departure_minute": 20},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 13,
+    "departure_minute": 24},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 13,
+    "departure_minute": 30},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 13,
+    "departure_minute": 36},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 13,
+    "departure_minute": 42},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 13,
+    "departure_minute": 46},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 13,
+    "departure_minute": 48},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 13,
+    "departure_minute": 55},
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 13,
+    "departure_minute": 59},
+
+    {"station_name": "เปรง",
+    "departure_hour": 14,
+    "departure_minute": 02},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 14,
+    "departure_minute": 08},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 14,
+    "departure_minute": 21},
+
+    {"station_name": "บางน้ำเปรี้ยว",
+    "departure_hour": 14,
+    "departure_minute": 36},
+
+    {"station_name": "ชุมทางคลองสิบเก้า",
+    "departure_hour": 14,
+    "departure_minute": 42},
+
+    {"station_name": "โยทะกา",
+    "departure_hour": 14,
+    "departure_minute": 52},
+
+    {"station_name": "บ้านสร้าง",
+    "departure_hour": 15,
+    "departure_minute": 01},
+
+    {"station_name": "บ้านปากพลี",
+    "departure_hour": 15,
+    "departure_minute": 14},
+
+    {"station_name": "ปราจีนบุรี",
+    "departure_hour": 15,
+    "departure_minute": 22},
+
+    {"station_name": "โคกมะกอก",
+    "departure_hour": 15,
+    "departure_minute": 32},
+
+    {"station_name": "ประจันตคาม",
+    "departure_hour": 15,
+    "departure_minute": 39},
+
+    {"station_name": "บ้านดงบัง",
+    "departure_hour": 15,
+    "departure_minute": 58},
+
+    {"station_name": "บ้านพรมแสง",
+    "departure_hour": 16,
+    "departure_minute": 03},
+
+    {"station_name": "กบินทร์บุรี",
+    "departure_hour": 16,
+    "departure_minute": 12},
+
+    {"station_name": "หนองสัง",
+    "departure_hour": 16,
+    "departure_minute": 23},
+
+    {"station_name": "พระปรง",
+    "departure_hour": 16,
+    "departure_minute": 32},
+
+    {"station_name": "บ้านแก้ง",
+    "departure_hour": 16,
+    "departure_minute": 37},
+
+    {"station_name": "ศาลาลำดวน",
+    "departure_hour": 16,
+    "departure_minute": 42},
+
+    {"station_name": "สระแก้ว",
+    "departure_hour": 16,
+    "departure_minute": 50},
+
+    {"station_name": "ท่าเกษม",
+    "departure_hour": 16,
+    "departure_minute": 58},
+
+    {"station_name": "ห้วยโจด",
+    "departure_hour": 17,
+    "departure_minute": 04},
+
+    {"station_name": "วัฒนานคร",
+    "departure_hour": 17,
+    "departure_minute": 14},
+
+    {"station_name": "ห้วยเดื่อ",
+    "departure_hour": 17,
+    "departure_minute": 27},
+
+    {"station_name": "อรัญประเทศ",
+    "departure_hour": 17,
+    "departure_minute": 35},
+}
+
+"277":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 15,
+    "departure_minute": 25},
+
+    {"station_name": "อุรุพงษ์",
+    "departure_hour": 15,
+    "departure_minute": 38},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 15,
+    "departure_minute": 41},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 15,
+    "departure_minute": 43},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 15,
+    "departure_minute": 45},
+
+    {"station_name": "อโศก",
+    "departure_hour": 15,
+    "departure_minute": 48},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 15,
+    "departure_minute": 52},
+
+    {"station_name": "สุขุมวิท71",
+    "departure_hour": 15,
+    "departure_minute": 54},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 15,
+    "departure_minute": 59},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 16,
+    "departure_minute": 05},
+
+    {"station_name": "ซอยวัดลานบุญ",
+    "departure_hour": 16,
+    "departure_minute": 08},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 16,
+    "departure_minute": 12},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 16,
+    "departure_minute": 16},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 16,
+    "departure_minute": 18},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 16,
+    "departure_minute": 24},
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 16,
+    "departure_minute": 27},
+
+    {"station_name": "เปรง",
+    "departure_hour": 16,
+    "departure_minute": 30},
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 16,
+    "departure_minute": 34},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 16,
+    "departure_minute": 37},
+
+    {"station_name": "บางเตย",
+    "departure_hour": 16,
+    "departure_minute": 40},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 16,
+    "departure_minute": 44},
+
+    {"station_name": "บางน้ำเปรี้ยว",
+    "departure_hour": 16,
+    "departure_minute": 59},
+
+    {"station_name": "ชุมทางคลองสิบเก้า",
+    "departure_hour": 17,
+    "departure_minute": 05},
+
+    {"station_name": "โยทะกา",
+    "departure_hour": 17,
+    "departure_minute": 14},
+
+    {"station_name": "บ้านสร้าง",
+    "departure_hour": 17,
+    "departure_minute": 21},
+
+    {"station_name": "บ้านปากพลี",
+    "departure_hour": 17,
+    "departure_minute": 34},
+
+    {"station_name": "ปราจีนบุรี",
+    "departure_hour": 17,
+    "departure_minute": 41},
+
+    {"station_name": "โคกมะกอก",
+    "departure_hour": 17,
+    "departure_minute": 50},
+
+    {"station_name": "ประจันตคาม",
+    "departure_hour": 17,
+    "departure_minute": 56},
+
+    {"station_name": "บ้านดงบัง",
+    "departure_hour": 18,
+    "departure_minute": 05},
+
+    {"station_name": "บ้านพรมแสง",
+    "departure_hour": 18,
+    "departure_minute": 11},
+
+    {"station_name": "กบินทร์บุรี",
+    "departure_hour": 18,
+    "departure_minute": 20},
+}
+
+"391":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 16,
+    "departure_minute": 35},
+
+    {"station_name": "อุรุพงษ์",
+    "departure_hour": 16,
+    "departure_minute": 43},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 16,
+    "departure_minute": 46},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 16,
+    "departure_minute": 50},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 16,
+    "departure_minute": 54},
+
+    {"station_name": "อโศก",
+    "departure_hour": 16,
+    "departure_minute": 58},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 17,
+    "departure_minute": 02},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 17,
+    "departure_minute": 09},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 17,
+    "departure_minute": 15},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 17,
+    "departure_minute": 22},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 17,
+    "departure_minute": 26},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 17,
+    "departure_minute": 30},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 17,
+    "departure_minute": 37},
+
+    {"station_name": "เปรง",
+    "departure_hour": 17,
+    "departure_minute": 43},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 17,
+    "departure_minute": 49},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 17,
+    "departure_minute": 55},
+}
+
+"371":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 17,
+    "departure_minute": 40},
+
+    {"station_name": "อุรุพงษ์",
+    "departure_hour": 17,
+    "departure_minute": 49},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 17,
+    "departure_minute": 53},
+
+    {"station_name": "ราชปรารภ",
+    "departure_hour": 17,
+    "departure_minute": 56},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 18,
+    "departure_minute": 02},
+
+    {"station_name": "อโศก",
+    "departure_hour": 18,
+    "departure_minute": 06},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 18,
+    "departure_minute": 11},
+
+    {"station_name": "สุขุมวิท71",
+    "departure_hour": 18,
+    "departure_minute": 13},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 18,
+    "departure_minute": 18},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 18,
+    "departure_minute": 24},
+
+    {"station_name": "ซอยวัดลานบุญ",
+    "departure_hour": 18,
+    "departure_minute": 29},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 18,
+    "departure_minute": 34},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 18,
+    "departure_minute": 39},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 18,
+    "departure_minute": 42},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 18,
+    "departure_minute": 51},
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 18,
+    "departure_minute": 56},
+
+    {"station_name": "เปรง",
+    "departure_hour": 19,
+    "departure_minute": 01},
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 19,
+    "departure_minute": 06},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 19,
+    "departure_minute": 11},
+
+    {"station_name": "บางเตย",
+    "departure_hour": 19,
+    "departure_minute": 16},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 19,
+    "departure_minute": 24},
+
+    {"station_name": "บางน้ำเปรี้ยว",
+    "departure_hour": 19,
+    "departure_minute": 42},
+
+    {"station_name": "ชุมทางคลองสิบเก้า",
+    "departure_hour": 19,
+    "departure_minute": 50},
+
+    {"station_name": "โยทะกา",
+    "departure_hour": 20,
+    "departure_minute":01 },
+
+    {"station_name": "บ้านสร้าง",
+    "departure_hour": 20,
+    "departure_minute": 10},
+
+    {"station_name": "บ้านปากพลี",
+    "departure_hour": 20,
+    "departure_minute": 25},
+
+    {"station_name": "ปราจีนบุรี",
+    "departure_hour":20,
+    "departure_minute":32 },
+}
+
+"383":{
+    {"station_name": "กรุงเทพ",
+    "departure_hour": 18,
+    "departure_minute": 25},
+
+    {"station_name": "อุรุพงษ์",
+    "departure_hour": 18,
+    "departure_minute": 34},
+
+    {"station_name": "พญาไท",
+    "departure_hour": 18,
+    "departure_minute": 37},
+
+    {"station_name": "มักกะสัน",
+    "departure_hour": 18,
+    "departure_minute": 43},
+
+    {"station_name": "อโศก",
+    "departure_hour": 18,
+    "departure_minute": 46},
+
+    {"station_name": "คลองตัน",
+    "departure_hour": 18,
+    "departure_minute": 52},
+
+    {"station_name": "สุขุมวิท71",
+    "departure_hour": 18,
+    "departure_minute": 56},
+
+    {"station_name": "หัวหมาก",
+    "departure_hour": 19,
+    "departure_minute": 02},
+
+    {"station_name": "บ้านทับช้าง",
+    "departure_hour": 19,
+    "departure_minute": 09},
+
+    {"station_name": "ซอยวัดลานบุญ",
+    "departure_hour": 19,
+    "departure_minute": 13},
+
+    {"station_name": "ลาดกระบัง",
+    "departure_hour": 19,
+    "departure_minute": 17},
+
+    {"station_name": "พระจอมเกล้า",
+    "departure_hour": 19,
+    "departure_minute": 22},
+
+    {"station_name": "หัวตะเข้",
+    "departure_hour": 19,
+    "departure_minute": 24},
+
+    {"station_name": "คลองหลวงแพ่ง",
+    "departure_hour": 19,
+    "departure_minute": 33},
+
+    {"station_name": "คลองอุดมชลจร",
+    "departure_hour": 19,
+    "departure_minute": 37},
+
+    {"station_name": "เปรง",
+    "departure_hour": 19,
+    "departure_minute": 42},
+
+    {"station_name": "คลองแขวงกลั่น",
+    "departure_hour": 19,
+    "departure_minute": 47},
+
+    {"station_name": "คลองบางพระ",
+    "departure_hour": 19,
+    "departure_minute": 51},
+
+    {"station_name": "บางเตย",
+    "departure_hour": 19,
+    "departure_minute": 56},
+
+    {"station_name": "ชุมทางฉะเชิงเทรา",
+    "departure_hour": 20,
+    "departure_minute": 00},
+}

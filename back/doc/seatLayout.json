@@ -1,0 +1,10 @@
+{
+    "class": 0,
+    "coach": 0,
+    "seat":[{
+        "row": 0,
+        "column": "X",
+        "isReserv": false
+    }]
+
+}

@@ -1,0 +1,248 @@
+@use "../../assets/styles/utils" as *;
+
+@mixin centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket {
+  width: 100%;
+  min-height: 10rem;
+  height: 10rem;
+  transition: all $transition-time ease-in-out;
+  @include languify() {
+    font: 400 1rem l(subtitle-font);
+  }
+
+  * {
+    @include themify() {
+      color: #000;
+    }
+  }
+
+  &.show {
+    min-height: 30rem;
+  }
+
+  &.show &__detail {
+    height: 20rem;
+  }
+
+  &.hide {
+    min-height: 10rem;
+  }
+
+  &.hide &__detail {
+    height: 0rem;
+  }
+
+  &__container {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    background-color: rgb(219, 210, 194);
+    border-radius: 0.5rem;
+  }
+
+  &__info {
+    padding: 1rem;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    font-size: 0.7rem;
+
+    @for $i from 1 through 100 {
+      &__#{$i} {
+        width: calc(100% / $i);
+      }
+    }
+
+    &__first-row {
+      display: flex;
+      height: 40%;
+
+      > div {
+        display: flex;
+        align-items: center;
+        padding: 0.7rem 0.5rem 0 0.5rem;
+        position: relative;
+        @include themify() {
+          border: 1px dotted t(main-color);
+        }
+
+        &:first-child {
+          width: 40%;
+          border-radius: 0.5rem 0 0 0;
+        }
+
+        &:nth-child(2) {
+          width: 40%;
+        }
+
+        &:last-child {
+          width: 20%;
+          border-radius: 0 0.5rem 0 0;
+        }
+
+        > h1 {
+          font-size: 1.2vw;
+        }
+
+        > span {
+          position: absolute;
+          top: 0;
+          left: 0.5rem;
+        }
+      }
+    }
+
+    &__second-row {
+      display: flex;
+      height: 60%;
+
+      > div {
+        @include centered-flex;
+        padding-top: 0.7rem;
+        position: relative;
+        @include themify() {
+          border: 1px dotted t(main-color);
+        }
+
+        &:first-child {
+          border-radius: 0 0 0 0.5rem;
+        }
+
+        &:last-child {
+          border-radius: 0 0 0.5rem 0;
+        }
+
+        &:nth-child(2) > h1,
+        &:nth-child(3) > h1 {
+          margin-left: -0.18rem;
+          letter-spacing: -0.18rem;
+          font-size: 2vw;
+        }
+
+        > h1 {
+          margin-left: -0.1rem;
+          letter-spacing: -0.1rem;
+          font-size: 2.5vw;
+        }
+
+        > span {
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__perforated-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 0.7rem;
+    height: 100%;
+
+    &__top,
+    &__bottom {
+      width: 0.7rem;
+      height: 0.5rem;
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        background-color: t(main-bg-color);
+      }
+    }
+
+    &__top {
+      border-radius: 0 0 0.7rem 0.7rem;
+    }
+
+    &__middle {
+      width: 10%;
+      height: 100%;
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        border-right: 2px dotted t(main-bg-color);
+      }
+    }
+
+    &__bottom {
+      border-radius: 0.7rem 0.7rem 0 0;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 5vw;
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: medium;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__detail {
+    width: 24vw;
+    overflow: auto;
+    padding-left: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: all $transition-time ease-in-out;
+    border-radius: 0 0 0.2rem 0.2rem;
+    background-color: rgb(242, 233, 218);
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    h3 {
+      margin: 0.8rem 0;
+    }
+
+    ul {
+      margin: 1rem 0;
+      list-style: none;
+      line-height: 150%;
+
+      li span {
+        font-weight: 600;
+      }
+
+      li:last-child {
+        padding: 1rem 0;
+      }
+    }
+  }
+}

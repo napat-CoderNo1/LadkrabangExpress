@@ -1,0 +1,32 @@
+@use "../../assets/styles/utils" as *;
+@use "../../assets/styles/fontEN";
+
+.lang-toggler {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 2rem;
+  background-color: transparent;
+  border: none;
+  transition: all calc($transition-time / 2) ease-in-out;
+  cursor: pointer;
+
+  div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font: 400 1.2rem fontEN.$title-font;
+    transition: opacity $transition-time cubic-bezier(0.2, 0.8, 0.2, 1) 0s,
+      transform calc($transition-time * 2.5)
+        cubic-bezier(0.175, 0.885, 0.32, 1.2) 0s;
+
+    &.hide {
+      transform: translateY(-5rem);
+    }
+  }
+}

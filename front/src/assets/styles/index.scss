@@ -1,0 +1,63 @@
+@use "./utils" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: all $transition-time ease-in-out;
+  @include themify() {
+    background-color: t("main-bg-color");
+  }
+
+  &.preload * {
+    $null-transition: none !important;
+
+    -webkit-transition: $null-transition;
+    -moz-transition: $null-transition;
+    -ms-transition: $null-transition;
+    -o-transition: $null-transition;
+    transition: $null-transition;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+    transition: all $transition-time ease-in-out;
+    width: 10px;
+
+    &-track {
+      @include themify() {
+        background: t(main-bg-color);
+      }
+    }
+
+    &-thumb {
+      width: 90%;
+      border-radius: 10px;
+      @include themify() {
+        background: t(bg-color-2);
+      }
+
+      &:hover {
+        @include themify() {
+          background: t(bg-color-3);
+        }
+      }
+
+      & {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

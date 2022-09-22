@@ -1,0 +1,37 @@
+{
+  "middle": {
+    "booking": {
+      "title": "จองตั๋วรถไฟ"
+    },
+    "information": {
+      "title": "ข่าวสาร",
+      "items": {
+        "trains": {
+          "title": "เกี่ยวกับรถไฟ"
+        },
+        "attractions": {
+          "title": "สถานที่ท่องเที่ยว"
+        },
+        "routes": {
+          "title": "เส้นทางรถไฟ"
+        }
+      }
+    },
+    "about": {
+      "title": "เกี่ยวกับเรา"
+    },
+    "staff": {
+      "search": "ค้นหา",
+      "refund": "คำขอยกเลิก"
+    }
+  },
+  "right": {
+    "logged": {
+      "profile": "ดูโปรไฟล์",
+      "logOut": "ออกจากระบบ"
+    },
+    "notLogged": {
+      "logIn": "เข้าสู่ระบบ"
+    }
+  }
+}

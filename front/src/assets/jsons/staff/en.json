@@ -1,0 +1,28 @@
+{
+  "search": {
+    "header": "Search",
+    "date": "Date",
+    "trainNo": "Train number",
+    "class": "Class",
+    "isOccupied": "Reserved seats only"
+  },
+  "result": {
+    "trainNo": "Train number",
+    "name": "Name",
+    "date": "Date",
+    "depTime": "Dep. Time ",
+    "arrTime": "Arr. Time",
+    "origin": "Origin",
+    "destination": "Destination",
+    "food": "Food",
+    "class": "Class",
+    "coach": "Coach",
+    "seat": "Seat",
+    "present": "Present",
+    "reason": "Reason",
+    "approve": "Approve"
+  },
+  "refund": {
+    "header": "Refund Requests"
+  }
+}

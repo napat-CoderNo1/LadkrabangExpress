@@ -1,0 +1,158 @@
+@use "../../assets/styles/utils" as *;
+
+.staff {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  * {
+    @include languify() {
+      font: 400 1rem l(subtitle-font);
+    }
+  }
+
+  &__search,
+  &__refund {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: calc(2 * $navbar-height);
+    border-radius: 1rem;
+    transition: all $transition-time ease-in-out;
+    @include themify() {
+      border: 0.2rem solid t(main-color);
+    }
+
+    > button {
+      align-self: center;
+      transform: scale(1.4);
+      cursor: pointer;
+      border: none;
+      transition: all $transition-time ease-in-out;
+      @include themify() {
+        background-color: t(main-bg-color);
+        color: t(main-font-color);
+      }
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      div:nth-child(n) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        @include themify() {
+          color: t(main-font-color);
+        }
+      }
+
+      input + label,
+      label {
+        transition: all $transition-time ease-in-out;
+        cursor: pointer;
+      }
+
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        transition: all $transition-time ease-in-out;
+        @include themify() {
+          @if t(main-font-color) == #fff {
+            filter: invert(1);
+          } @else {
+            filter: invert(0);
+          }
+        }
+      }
+
+      input[type="date"],
+      input[type="text"] {
+        height: 2rem;
+        border-radius: 0.2rem;
+        transition: all $transition-time ease-in-out;
+        @include themify() {
+          border: 0.15rem solid t(main-color);
+          background-color: t(main-bg-color);
+          color: t(main-font-color);
+        }
+      }
+
+      input[type="checkbox"] {
+        display: none;
+
+        &:checked + label {
+          transform: scale(1.2);
+          @include themify() {
+            color: greenyellow;
+          }
+        }
+      }
+
+      input[type="radio"] {
+        display: none;
+
+        + label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 2px;
+          min-width: 2rem;
+          height: 2rem;
+          border-radius: 1rem;
+        }
+
+        &:checked + label {
+          @include themify() {
+            background-color: t(main-color);
+          }
+        }
+      }
+    }
+  }
+
+  &__result {
+    text-align: center;
+    margin-top: 2rem;
+    width: 90%;
+
+    table {
+      width: 100%;
+
+      thead {
+        height: 3rem;
+        @include themify() {
+          background-color: t(main-color);
+        }
+      }
+
+      tbody {
+        tr {
+          height: 2.7rem;
+
+          &:nth-child(2n) {
+            @include themify() {
+              background-color: t(color-5);
+            }
+          }
+
+          &:nth-child(2n-1) {
+            @include themify() {
+              background-color: t(color-3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

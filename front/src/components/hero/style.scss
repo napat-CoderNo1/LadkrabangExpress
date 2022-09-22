@@ -1,0 +1,62 @@
+@use "../../assets/styles/utils" as *;
+@use "../../assets/styles/fontEN";
+
+$offsetTop: calc(-1.7 * $navbar-height);
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: calc(100vh - $navbar-height);
+
+  img {
+    position: absolute;
+    top: $offsetTop;
+    left: 0;
+    height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-size: contain;
+    z-index: -10;
+  }
+
+  &__speech {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 70%;
+    text-align: right;
+    margin-top: $offsetTop;
+    padding-right: 4rem;
+    z-index: -10;
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.376) -100%,
+      rgba(0, 0, 0, 0.328) 64.22%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    h1 {
+      margin-top: -2rem;
+      @include themify() {
+        color: #fff;
+      }
+      @include languify() {
+        font: italic 400 5rem fontEN.$title-font;
+      }
+    }
+
+    p {
+      margin-top: 1.2rem;
+      width: 70%;
+      @include themify() {
+        color: t(color-2);
+      }
+      @include languify() {
+        font: italic 400 1.3rem l(body-font);
+      }
+    }
+  }
+}
